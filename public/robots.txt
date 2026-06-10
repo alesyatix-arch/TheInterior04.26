@@ -14,3 +14,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://твой-интерьер.рф/sitemap.xml
+Sitemap: https://xn----ctbkane4aexbmg6k.xn--p1ai/sitemap.xml
