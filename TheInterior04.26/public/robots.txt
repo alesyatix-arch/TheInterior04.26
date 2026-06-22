@@ -1,0 +1,19 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
+<<<<<<< HEAD
+
+Sitemap: https://xn----ctbkane4aexbmg6k.xn--p1ai/sitemap.xml
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
