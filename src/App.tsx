@@ -22,28 +22,30 @@ const PageFallback = () => (
   </div>
 );
 
-const App = forwardRef(() => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+const App = forwardRef(() => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
 
-      {/* ВАЖНО: HashRouter вместо BrowserRouter */}
-      <HashRouter>
-        <Suspense fallback={<PageFallback />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/style/:styleId" element={<StylePage />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/public-offer" element={<PublicOffer />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/yandex-consent" element={<YandexConsent />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </HashRouter>
+        <HashRouter>
+          <Suspense fallback={<PageFallback />}>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/style/:styleId" element={<StylePage />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/public-offer" element={<PublicOffer />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/yandex-consent" element={<YandexConsent />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </HashRouter>
+      </TooltipProvider>
     </QueryClientProvider>
-));
+  );
+});
 
 App.displayName = "App";
 
