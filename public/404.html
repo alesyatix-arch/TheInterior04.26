@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Твой Интерьер</title>
+
+    <!-- ⭐ ВАЖНО: фиксация GitHub Pages (React routing fix) -->
+    <script>
+      (function () {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
+    <!-- стили/шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- favicon (если есть) -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta name="description" content="Дизайн-проект квартиры быстро и доступно" />
+
+  </head>
+
+  <body>
+    <noscript>
+      Вам нужно включить JavaScript для работы сайта
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- React подключается сюда автоматически через Vite -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
