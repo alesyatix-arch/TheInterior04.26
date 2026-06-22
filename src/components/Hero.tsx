@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { blurPlaceholders } from "@/lib/blurPlaceholders";
 
+const BASE = import.meta.env.BASE_URL;
+
 const slides = [
-  { src: "/hero-slide-1.webp", blur: blurPlaceholders.heroSlide1 },
-  { src: "/hero-slide-2.webp", blur: blurPlaceholders.heroSlide2 },
-  { src: "/hero-slide-3.webp", blur: blurPlaceholders.heroSlide3 },
-  { src: "/hero-slide-4.webp", blur: blurPlaceholders.heroSlide4 },
+  { src: `${BASE}hero-slide-1.webp`, blur: blurPlaceholders.heroSlide1 },
+  { src: `${BASE}hero-slide-2.webp`, blur: blurPlaceholders.heroSlide2 },
+  { src: `${BASE}hero-slide-3.webp`, blur: blurPlaceholders.heroSlide3 },
+  { src: `${BASE}hero-slide-4.webp`, blur: blurPlaceholders.heroSlide4 },
 ];
 
 const badges = [
@@ -92,8 +94,6 @@ const Hero = () => {
           {/* Right column — image carousel */}
           <div className="relative lg:mt-14 xl:mt-16">
             <div className="relative w-full aspect-[4/5] lg:aspect-[5/6] overflow-hidden bg-foreground/5 shadow-2xl">
-
-
               {slides.map((slide, i) => (
                 <div
                   key={i}
@@ -145,7 +145,7 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Floating badge — rotates with slides */}
+            {/* Floating badge */}
             <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-background shadow-xl border border-border px-7 py-5 min-w-[220px] max-w-[260px] overflow-hidden">
               {badges.map((b, i) => (
                 <div
