@@ -1,0 +1,1 @@
+import{z as e,l as t,C as r}from"./index-BkN2_7cs.js";const n=()=>{const o=e();return t.jsxs("button",{onClick:()=>o(-1),className:"inline-flex items-center gap-2 text-sm font-body text-muted-foreground hover:text-foreground transition-colors mb-8 group",children:[t.jsx(r,{className:"w-4 h-4 transition-transform group-hover:-translate-x-1"}),"Назад"]})};export{n as B};
