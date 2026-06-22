@@ -2,11 +2,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { forwardRef, lazy, Suspense } from "react";
+
 import Index from "./pages/Index";
 
-// Code-split secondary pages so the homepage doesn't pull in their assets
 const StylePage = lazy(() => import("./pages/StylePage"));
 const Team = lazy(() => import("./pages/Team"));
 const PublicOffer = lazy(() => import("./pages/PublicOffer"));
@@ -27,7 +27,9 @@ const App = forwardRef(() => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+
+      {/* ВАЖНО: HashRouter вместо BrowserRouter */}
+      <HashRouter>
         <Suspense fallback={<PageFallback />}>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -36,14 +38,13 @@ const App = forwardRef(() => (
             <Route path="/public-offer" element={<PublicOffer />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/yandex-consent" element={<YandexConsent />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+      </HashRouter>
+    </QueryClientProvider>
 ));
+
 App.displayName = "App";
 
 export default App;
