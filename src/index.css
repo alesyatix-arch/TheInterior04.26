@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+=======
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
 @tailwind base;
 @tailwind components;
@@ -38,7 +42,11 @@
     --input: 30 10% 86%;
     --ring: 352 78% 42%;
 
+<<<<<<< HEAD
+    --radius: 0rem;
+=======
     --radius: 0.75rem;
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
     /* Custom tokens — warm brown overlays instead of cold black */
     --hero-overlay: linear-gradient(105deg, rgba(48,36,30,0.78) 0%, rgba(48,36,30,0.55) 35%, rgba(48,36,30,0.25) 65%, rgba(48,36,30,0.05) 100%);
@@ -49,9 +57,15 @@
     /* Comparison table tokens */
     --table-base: 30 10% 94%;
     --table-optimum: 30 25% 92%;
+<<<<<<< HEAD
+    /* Typography — friendly geometric sans */
+    --font-heading: 'Manrope', system-ui, -apple-system, sans-serif;
+    --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+=======
     /* Typography — simple system sans */
     --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
     --sidebar-background: 30 12% 97%;
     --sidebar-foreground: 25 15% 28%;
@@ -111,13 +125,23 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
+<<<<<<< HEAD
+    font-weight: 500;
+    letter-spacing: -0.005em;
+=======
     font-weight: 400;
     letter-spacing: 0.01em;
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+<<<<<<< HEAD
+    font-weight: 800;
+    letter-spacing: -0.02em;
+=======
     font-weight: 600;
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   }
 }
 
@@ -244,3 +268,24 @@ html {
 ::selection {
   background-color: hsl(352 78% 42% / 0.2);
 }
+<<<<<<< HEAD
+
+/* Marquee strip */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 90s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5

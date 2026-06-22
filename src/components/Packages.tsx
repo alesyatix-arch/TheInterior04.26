@@ -159,7 +159,11 @@ const Packages = () => {
             <div className="space-y-7">
               {baseGroups.map((group) => (
                 <div key={group.category}>
+<<<<<<< HEAD
+                  <div className="text-xs font-body font-semibold uppercase tracking-[0.15em] text-foreground/70 mb-3">
+=======
                   <div className="text-xs font-body font-semibold uppercase tracking-[0.15em] text-foreground/50 mb-3">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                     {group.category}
                   </div>
                   <ul className="space-y-2.5">
@@ -217,18 +221,30 @@ const Packages = () => {
                   Дополнительные опции
                 </h3>
               </div>
+<<<<<<< HEAD
+              <span className="text-xs font-body text-background/75 border border-background/20 px-2.5 py-1 shrink-0">
+                02
+              </span>
+            </div>
+            <p className="text-base font-body text-background/80 mb-8">
+=======
               <span className="text-xs font-body text-background/50 border border-background/20 px-2.5 py-1 shrink-0">
                 02
               </span>
             </div>
             <p className="text-base font-body text-background/60 mb-8">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
               Отметьте, что хотите добавить — мы учтём это при расчёте.
             </p>
 
             <div className="space-y-7 mb-8">
               {groupedOptions.map(([category, items]) => (
                 <div key={category}>
+<<<<<<< HEAD
+                  <div className="text-xs font-body font-semibold uppercase tracking-[0.15em] text-background/75 mb-3">
+=======
                   <div className="text-xs font-body font-semibold uppercase tracking-[0.15em] text-background/50 mb-3">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                     {category}
                   </div>
                   <ul className="space-y-1">
@@ -253,7 +269,11 @@ const Packages = () => {
                                 {opt.title}
                               </div>
                               {opt.description && (
+<<<<<<< HEAD
+                                <div className="text-sm font-body text-background/75 mt-0.5 leading-snug">
+=======
                                 <div className="text-sm font-body text-background/55 mt-0.5 leading-snug">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                                   {opt.description}
                                 </div>
                               )}
@@ -270,7 +290,11 @@ const Packages = () => {
             {/* Footer with counter + CTA */}
             <div className="border-t border-background/15 pt-6">
               <div className="flex items-center justify-between mb-4 text-sm font-body">
+<<<<<<< HEAD
+                <span className="text-background/80">Выбрано опций</span>
+=======
                 <span className="text-background/60">Выбрано опций</span>
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                 <span className="text-background font-semibold flex items-center gap-1.5">
                   <Plus className="w-4 h-4 text-primary" />
                   {selectedCount}

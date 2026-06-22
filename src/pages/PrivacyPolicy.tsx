@@ -2,13 +2,29 @@ import { forwardRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackButton from "@/components/BackButton";
+<<<<<<< HEAD
+import SEO from "@/components/SEO";
 
 const PrivacyPolicy = forwardRef<HTMLDivElement>((_, ref) => {
   const siteUrl = "the-interior.ru";
+  const siteName = "Твой Интерьер";
+=======
+
+const PrivacyPolicy = forwardRef<HTMLDivElement>((_, ref) => {
+  const siteUrl = "the-interior.ru";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   const email = "info@coolagin.design";
 
   return (
     <div className="min-h-screen bg-background">
+<<<<<<< HEAD
+      <SEO
+        title="Политика обработки персональных данных | Твой Интерьер"
+        description="Условия обработки персональных данных пользователей сайта студии «Твой Интерьер»."
+        path="/privacy-policy"
+      />
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       <Header />
       <main className="container mx-auto px-4 lg:px-12 xl:px-16 py-32 max-w-4xl">
         <BackButton />
@@ -18,7 +34,11 @@ const PrivacyPolicy = forwardRef<HTMLDivElement>((_, ref) => {
 
         <div className="space-y-8 text-base font-body text-foreground/90 leading-relaxed">
           <p>
+<<<<<<< HEAD
+            Настоящая Политика обработки персональных данных (далее — Политика) является неотъемлемой частью Публичной оферты, размещенной на сайте в сети Интернет по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteName}</a> (далее — Сайт).
+=======
             Настоящая Политика обработки персональных данных (далее — Политика) является неотъемлемой частью Публичной оферты, размещенной на сайте в сети Интернет по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteUrl}</a> (далее — Сайт).
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
           </p>
           <p>
             Сервисы Сайта — интерактивные (диалоговые) программные компоненты на страницах Сайта, используемые для интеграции с информационными системами и предоставляющие пользователям Сайта определенные возможности по доступу к информации на Сайт, а именно: формы обратной связи, чат (далее — Сервисы, Сервисы Сайта).
@@ -32,7 +52,11 @@ const PrivacyPolicy = forwardRef<HTMLDivElement>((_, ref) => {
             <p>1.1. В рамках настоящей Политики под персональной информацией Пользователя понимаются:</p>
             <p className="mt-2">1.1.1. Персональная информация, которую Пользователь предоставляет о себе самостоятельно при регистрации (создании учетной записи) или в процессе использования Сервисов, включая персональные данные Пользователя. Обязательная для предоставления Сервисов информация помечена специальным образом.</p>
             <p className="mt-2">1.1.2. Данные, которые автоматически передаются сервисам Сайта в процессе их использования с помощью установленного на устройстве Пользователя программного обеспечения, в том числе IP-адрес, данные файлов cookie, информация о браузере Пользователя (или иной программе, с помощью которой осуществляется доступ к сервисам), технические характеристики оборудования и программного обеспечения, используемых Пользователем, дата и время доступа к сервисам, адреса запрашиваемых страниц и иная подобная информация.</p>
+<<<<<<< HEAD
+            <p className="mt-2">1.1.3. Настоящая Политика применяется только к Сайту <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteName}</a>. Сайт «{siteName}» не контролирует и не несет ответственности за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте «{siteName}».</p>
+=======
             <p className="mt-2">1.1.3. Настоящая Политика применяется только к Сайту <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteUrl}</a>. Сайт {siteUrl} не контролирует и не несет ответственности за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте {siteUrl}.</p>
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
           </section>
 
           <section>
@@ -103,8 +127,13 @@ const PrivacyPolicy = forwardRef<HTMLDivElement>((_, ref) => {
             <p>7.1. Администрация Сайта вправе вносить изменения в настоящую Политику без согласия Пользователя.</p>
             <p className="mt-2">7.2. Новая Политика вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики.</p>
             <p className="mt-2">7.3. Все предложения или вопросы по настоящей Политике следует направлять по адресу электронной почты: <a href={`mailto:${email}`} className="text-primary hover:underline">{email}</a>.</p>
+<<<<<<< HEAD
+            <p className="mt-2">7.4. Действующая Политика размещена на странице по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteName}</a>.</p>
+            <p className="mt-2">7.5. Настоящая Политика является неотъемлемой частью Публичной оферты и Соглашения о согласии на обработку персональных данных, размещенных на странице по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteName}</a>.</p>
+=======
             <p className="mt-2">7.4. Действующая Политика размещена на странице по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteUrl}</a>.</p>
             <p className="mt-2">7.5. Настоящая Политика является неотъемлемой частью Публичной оферты и Соглашения о согласии на обработку персональных данных, размещенных на странице по адресу: <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteUrl}</a>.</p>
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
           </section>
         </div>
       </main>

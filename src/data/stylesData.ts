@@ -1,7 +1,11 @@
 // Данные для страниц стилей интерьера
 
 import styleElegance from "@/assets/style-elegance.jpg";
+<<<<<<< HEAD
+
+=======
 import styleCasual from "@/assets/style-casual.jpg";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 import styleScandi from "@/assets/style-scandi.jpg";
 import styleSmart from "@/assets/style-smart.jpg";
 import styleGentleman from "@/assets/style-gentleman.jpg";
@@ -49,6 +53,22 @@ import eleganceProject3_3 from "@/assets/elegance-project3-3.jpg";
 import eleganceProject3_4 from "@/assets/elegance-project3-4.jpg";
 
 // Gallery images for Casual
+<<<<<<< HEAD
+import casualNewLivingAsset from "@/assets/casual-new-living.jpg.asset.json";
+import casualNewBedroomAsset from "@/assets/casual-new-bedroom.jpg.asset.json";
+import casualNewBathroomAsset from "@/assets/casual-new-bathroom.jpg.asset.json";
+import casualNewKitchenAsset from "@/assets/casual-new-kitchen.jpg.asset.json";
+import casualNewLiving2Asset from "@/assets/casual-new-living2.jpg.asset.json";
+import casualNewDeskAsset from "@/assets/casual-new-desk.jpg.asset.json";
+const casualLiving = casualNewLivingAsset.url;
+const casualBedroom = casualNewBedroomAsset.url;
+const casualBathroom = casualNewBathroomAsset.url;
+const casualKitchen = casualNewKitchenAsset.url;
+const casualLiving2 = casualNewLiving2Asset.url;
+const casualDesk = casualNewDeskAsset.url;
+
+// Gallery images for Scandi
+=======
 import casualLiving from "@/assets/casual-living.jpg";
 import casualBedroom from "@/assets/casual-bedroom.jpg";
 import casualBathroom from "@/assets/casual-bathroom.jpg";
@@ -60,6 +80,7 @@ import casualProject1_3 from "@/assets/casual-project1-3.jpg";
 import scandiLiving from "@/assets/scandi-living.jpg";
 import scandiBedroom from "@/assets/scandi-bedroom.jpg";
 import scandiBathroom from "@/assets/scandi-bathroom.jpg";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
 // Project images for Scandi
 import scandiProject1 from "@/assets/scandi-project-1.webp";
@@ -78,6 +99,48 @@ import scandiProject2_5 from "@/assets/scandi-project2-5.jpg";
 import scandiProject2_6 from "@/assets/scandi-project2-6.jpg";
 import scandiProject2_7 from "@/assets/scandi-project2-7.jpg";
 import scandiFloorplan from "@/assets/scandi-floorplan.jpg";
+<<<<<<< HEAD
+import scandiNewEntryAsset from "@/assets/scandi-new-entry.jpg.asset.json";
+import scandiNewLivingHeroAsset from "@/assets/scandi-new-living.jpg.asset.json";
+import scandiNewChairAsset from "@/assets/scandi-new-chair.jpg.asset.json";
+import scandiNewBathroomAsset from "@/assets/scandi-new-bathroom.jpg.asset.json";
+const scandiNewEntry = scandiNewEntryAsset.url;
+const scandiNewLivingHero = scandiNewLivingHeroAsset.url;
+const scandiNewChair = scandiNewChairAsset.url;
+const scandiNewBathroom = scandiNewBathroomAsset.url;
+
+// Gallery images for Smart (new set)
+import smartNewBedroomAsset from "@/assets/smart-new-bedroom.jpg.asset.json";
+import smartNewLivingAsset from "@/assets/smart-new-living.jpg.asset.json";
+import smartNewBathroomAsset from "@/assets/smart-new-bathroom.jpg.asset.json";
+import smartNewDeskAsset from "@/assets/smart-new-desk.jpg.asset.json";
+import smartNewChairAsset from "@/assets/smart-new-chair.jpg.asset.json";
+import smartNewLivingRoomAsset from "@/assets/smart-new-living-room.jpg.asset.json";
+const smartNewBedroom = smartNewBedroomAsset.url;
+const smartNewLiving = smartNewLivingAsset.url;
+const smartNewBathroom = smartNewBathroomAsset.url;
+const smartNewDesk = smartNewDeskAsset.url;
+const smartNewChair = smartNewChairAsset.url;
+const smartNewLivingRoom = smartNewLivingRoomAsset.url;
+
+// Gallery images for Gentleman (new set)
+import gentlemanNewLivingAsset from "@/assets/gentleman-new-living.jpg.asset.json";
+import gentlemanNewBedroomAsset from "@/assets/gentleman-new-bedroom.jpg.asset.json";
+import gentlemanNewBathroomAsset from "@/assets/gentleman-new-bathroom.jpg.asset.json";
+import gentlemanNewKitchenAsset from "@/assets/gentleman-new-kitchen.jpg.asset.json";
+import gentlemanNewDiningAsset from "@/assets/gentleman-new-dining.jpg.asset.json";
+import gentlemanNewTvAsset from "@/assets/gentleman-new-tv.jpg.asset.json";
+import gentlemanNewEntryAsset from "@/assets/gentleman-new-entry.jpg.asset.json";
+import gentlemanNewWcAsset from "@/assets/gentleman-new-wc.jpg.asset.json";
+const gentlemanLiving = gentlemanNewLivingAsset.url;
+const gentlemanBedroom = gentlemanNewBedroomAsset.url;
+const gentlemanBathroom = gentlemanNewBathroomAsset.url;
+const gentlemanKitchen = gentlemanNewKitchenAsset.url;
+const gentlemanDining = gentlemanNewDiningAsset.url;
+const gentlemanTv = gentlemanNewTvAsset.url;
+const gentlemanEntry = gentlemanNewEntryAsset.url;
+const gentlemanWc = gentlemanNewWcAsset.url;
+=======
 
 // Gallery images for Smart
 import smartBedroom from "@/assets/smart-bedroom.jpg";
@@ -88,6 +151,7 @@ import smartBedroom3 from "@/assets/smart-bedroom-3.jpg";
 import gentlemanLiving from "@/assets/gentleman-living.jpg";
 import gentlemanBedroom from "@/assets/gentleman-bedroom.jpg";
 import gentlemanBathroom from "@/assets/gentleman-bathroom.jpg";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
 export interface StyleData {
   id: string;
@@ -97,6 +161,10 @@ export interface StyleData {
   fullDescription: string;
   image: string;
   hideGalleryLabels?: boolean;
+<<<<<<< HEAD
+  galleryLabelLiving?: string;
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   galleryImages: {
     living: string;
     bedroom: string;
@@ -113,11 +181,19 @@ export const stylesData: StyleData[] = [
     subtitle: "Изысканный, элегантный, премиальный",
     description: "Утончённый дизайн с премиальными материалами и благородными оттенками",
     fullDescription: "Стиль «Элегант» — это воплощение утончённой роскоши и безупречного вкуса. Благородные оттенки, премиальные материалы и внимание к деталям создают атмосферу изысканного комфорта.",
+<<<<<<< HEAD
+    image: eleganceProject3_1,
+    galleryImages: {
+      living: eleganceProject3_1,
+      bedroom: eleganceProject3_3,
+      bathroom: eleganceProject3_4,
+=======
     image: styleElegance,
     galleryImages: {
       living: eleganceLiving,
       bedroom: eleganceBedroom,
       bathroom: eleganceBathroom,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     },
     projects: [
       [
@@ -139,6 +215,8 @@ export const stylesData: StyleData[] = [
         eleganceProject2_4,
         eleganceProject2_5,
       ],
+<<<<<<< HEAD
+=======
       [
         eleganceProject3_1,
         eleganceProject3_3,
@@ -146,6 +224,7 @@ export const stylesData: StyleData[] = [
         eleganceExtra1,
         eleganceExtra2,
       ],
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     ],
   },
   {
@@ -154,12 +233,19 @@ export const stylesData: StyleData[] = [
     subtitle: "Тёплый, комфортный, современный",
     description: "Современный комфортный интерьер с тёплой цветовой палитрой и функциональными решениями",
     fullDescription: "Стиль «Комфорт» — это гармония тепла и современности. Уютные материалы, функциональные решения и тёплая цветовая палитра создают пространство для комфортной жизни.",
+<<<<<<< HEAD
+    image: casualLiving,
+=======
     image: styleCasual,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     galleryImages: {
       living: casualLiving,
       bedroom: casualBedroom,
       bathroom: casualBathroom,
     },
+<<<<<<< HEAD
+    projects: [[casualKitchen, casualLiving2, casualDesk]],
+=======
     projects: [
       [
         casualProject1_1,
@@ -167,6 +253,7 @@ export const stylesData: StyleData[] = [
         casualProject1_3,
       ],
     ],
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   },
   {
     id: "scandi",
@@ -174,15 +261,30 @@ export const stylesData: StyleData[] = [
     subtitle: "Светлый, лёгкий, уютный",
     description: "Минималистичный скандинавский стиль с акцентом на натуральные материалы и светлые тона",
     fullDescription: "Скандинавский стиль — это гармония света, природных материалов и функциональности. Светлые тона, натуральное дерево и уютный текстиль создают атмосферу спокойствия.",
+<<<<<<< HEAD
+    image: scandiNewLivingHero,
+    galleryImages: {
+      living: scandiNewLivingHero,
+      bedroom: scandiProject2_2,
+      bathroom: scandiNewBathroom,
+=======
     image: styleScandi,
     galleryImages: {
       living: scandiLiving,
       bedroom: scandiBedroom,
       bathroom: scandiBathroom,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     },
     projects: [
       [
         scandiFloorplan,
+<<<<<<< HEAD
+        scandiNewEntry,
+        scandiNewLivingHero,
+        scandiNewChair,
+        scandiNewBathroom,
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
         scandiProject7,
         scandiProject4,
         scandiProject8,
@@ -192,6 +294,8 @@ export const stylesData: StyleData[] = [
         scandiProject2,
         scandiProject5,
       ],
+<<<<<<< HEAD
+=======
       [
         scandiProject2_1,
         scandiProject2_2,
@@ -201,12 +305,24 @@ export const stylesData: StyleData[] = [
         scandiProject2_6,
         scandiProject2_7,
       ],
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     ],
   },
   {
     id: "smart",
     name: "Рациональ",
     subtitle: "Функциональный, практичный, современный",
+<<<<<<< HEAD
+    description: "Умный дизайн с продуманной эргономикой, акцентной палитрой и натуральным деревом",
+    fullDescription: "Стиль «Рациональ» — это продуманность каждой детали. Эргономичные решения, акцентная палитра и натуральное дерево создают современное пространство для активной жизни.",
+    image: smartNewLiving,
+    galleryLabelLiving: "Гостиная",
+    galleryImages: {
+      living: smartNewLivingRoom,
+      bedroom: smartNewBedroom,
+      bathroom: smartNewBathroom,
+    },
+=======
     description: "Умный дизайн с продуманной эргономикой, нейтральной палитрой и акцентами натурального дерева",
     fullDescription: "Стиль «Рациональ» — это продуманность каждой детали. Эргономичные решения, нейтральная палитра и акценты натурального дерева создают современное пространство для активной жизни.",
     image: styleSmart,
@@ -221,6 +337,7 @@ export const stylesData: StyleData[] = [
       smartExtra2,
       smartExtra3,
     ],
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   },
   {
     id: "gentleman",
@@ -228,7 +345,11 @@ export const stylesData: StyleData[] = [
     subtitle: "Сдержанный, благородный, строгий",
     description: "Элегантный интерьер с глубокими оттенками, кожаными акцентами и современным дизайнерским освещением",
     fullDescription: "Стиль «Баланс» — это сдержанная элегантность и благородство. Глубокие оттенки, кожаные акценты и дизайнерское освещение создают атмосферу изысканного комфорта.",
+<<<<<<< HEAD
+    image: gentlemanLiving,
+=======
     image: styleGentleman,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     galleryImages: {
       living: gentlemanLiving,
       bedroom: gentlemanBedroom,
@@ -236,6 +357,16 @@ export const stylesData: StyleData[] = [
     },
     projects: [
       [
+<<<<<<< HEAD
+        gentlemanEntry,
+        gentlemanKitchen,
+        gentlemanLiving,
+        gentlemanDining,
+        gentlemanTv,
+        gentlemanBedroom,
+        gentlemanWc,
+        gentlemanBathroom,
+=======
         gentlemanProject1Floorplan,
         gentlemanProject1_1,
         gentlemanProject1_2,
@@ -247,6 +378,7 @@ export const stylesData: StyleData[] = [
       [
         gentlemanExtra1,
         gentlemanExtra2,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       ],
     ],
   },

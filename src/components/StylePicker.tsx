@@ -1,16 +1,34 @@
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
+import eleganceProject3_1 from "@/assets/elegance-project3-1.jpg";
+import casualNewLivingAsset from "@/assets/casual-new-living.jpg.asset.json";
+const casualNewLiving = casualNewLivingAsset.url;
+import scandiNewLivingHeroAsset from "@/assets/scandi-new-living.jpg.asset.json";
+const scandiProject2_1 = scandiNewLivingHeroAsset.url;
+import smartBedroomAsset from "@/assets/smart-new-bedroom.jpg.asset.json";
+const smartBedroom = smartBedroomAsset.url;
+import gentlemanLivingAsset from "@/assets/gentleman-new-living.jpg.asset.json";
+const gentlemanLiving = gentlemanLivingAsset.url;
+=======
 import eleganceLiving from "@/assets/elegance-living.webp";
 import casualBathroom from "@/assets/casual-bathroom.webp";
 import scandiBedroom from "@/assets/scandi-bedroom.webp";
 import smartBedroom from "@/assets/smart-bedroom-4.webp";
 import gentlemanLiving from "@/assets/gentleman-living.webp";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 import BlurImage from "@/components/BlurImage";
 import { blurPlaceholders } from "@/lib/blurPlaceholders";
 
 const styles = [
+<<<<<<< HEAD
+  { id: "elegance", name: "Элегант", image: eleganceProject3_1, blur: blurPlaceholders.eleganceLiving },
+  { id: "casual", name: "Комфорт", image: casualNewLiving, blur: blurPlaceholders.casualBathroom },
+  { id: "scandi", name: "Сканди", image: scandiProject2_1, blur: blurPlaceholders.scandiBedroom },
+=======
   { id: "elegance", name: "Элегант", image: eleganceLiving, blur: blurPlaceholders.eleganceLiving },
   { id: "casual", name: "Комфорт", image: casualBathroom, blur: blurPlaceholders.casualBathroom },
   { id: "scandi", name: "Сканди", image: scandiBedroom, blur: blurPlaceholders.scandiBedroom },
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   { id: "smart", name: "Рациональ", image: smartBedroom, blur: blurPlaceholders.smartBedroom },
   { id: "gentleman", name: "Баланс", image: gentlemanLiving, blur: blurPlaceholders.gentlemanLiving },
 ];
@@ -21,7 +39,11 @@ const StylePicker = () => {
       <div className="container mx-auto px-4 lg:px-12 xl:px-16">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
+<<<<<<< HEAD
+          <span className="inline-block text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground/70 border-l-2 border-primary pl-3 mb-6">
+=======
           <span className="inline-block text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground/50 border-l-2 border-primary pl-3 mb-6">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
             Коллекция
           </span>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-semibold text-foreground">

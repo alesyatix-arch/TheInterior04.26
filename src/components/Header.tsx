@@ -20,9 +20,16 @@ const Header = () => {
 
   const navLinks = [
     { href: "/team", label: "О нас", isRoute: true },
+<<<<<<< HEAD
+    { href: "#calculator", label: "Калькулятор" },
+    { href: "#services", label: "Форматы" },
+    { href: "#styles", label: "Стили" },
+    { href: "#faq", label: "FAQ" },
+=======
     { href: "#styles", label: "Стили" },
     { href: "#services", label: "Услуги" },
     
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     { href: "#contacts", label: "Контакты" },
   ];
 
@@ -124,7 +131,11 @@ const Header = () => {
                 e.preventDefault();
                 setIsMobileMenuOpen(false);
                 if (isHome) {
+<<<<<<< HEAD
+                  document.querySelector("#contacts")?.scrollIntoView({ behavior: "smooth" });
+=======
                   document.querySelector("#contacts-anchor")?.scrollIntoView({ behavior: "smooth", block: "center" });
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                 } else {
                   navigate("/#contacts");
                 }

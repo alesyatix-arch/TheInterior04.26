@@ -28,7 +28,11 @@ const RequestForm = () => {
               проект сегодня
             </h2>
             <div className="w-12 h-0.5 bg-primary mb-6" />
+<<<<<<< HEAD
+            <p className="text-lg font-body text-background/75 max-w-md leading-relaxed">
+=======
             <p className="text-lg font-body text-background/50 max-w-md leading-relaxed">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
               Получите расчёт стоимости и бесплатную консультацию от нас
             </p>
           </div>

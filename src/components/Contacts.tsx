@@ -35,7 +35,11 @@ const Contacts = () => {
           <div id="contacts-anchor" className="h-0" />
 
           {/* Contact Details */}
+<<<<<<< HEAD
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+=======
           <div className="grid sm:grid-cols-3 gap-8">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
             <div className="flex flex-col items-center text-center p-6 bg-secondary/50">
               <div className="w-14 h-14 flex items-center justify-center bg-primary/10 mb-4">
                 <Phone className="w-7 h-7 text-primary" />
@@ -72,6 +76,26 @@ const Contacts = () => {
 
             <div className="flex flex-col items-center text-center p-6 bg-secondary/50">
               <div className="w-14 h-14 flex items-center justify-center bg-primary/10 mb-4">
+<<<<<<< HEAD
+                <span className="text-2xl font-heading font-extrabold text-primary leading-none">M</span>
+              </div>
+              <span className="block text-base font-body text-muted-foreground mb-2">
+                MAX
+              </span>
+              <a 
+                href="https://max.ru/+79779429040" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-heading font-semibold text-foreground hover:text-primary transition-colors"
+              >
+                +7 977 942 9040
+              </a>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-6 bg-secondary/50">
+              <div className="w-14 h-14 flex items-center justify-center bg-primary/10 mb-4">
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                 <Mail className="w-7 h-7 text-primary" />
               </div>
               <span className="block text-base font-body text-muted-foreground mb-2">

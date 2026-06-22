@@ -3,6 +3,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Mascot from "@/components/Mascot";
 import BackButton from "@/components/BackButton";
+<<<<<<< HEAD
+import SEO from "@/components/SEO";
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 import teamArtem from "@/assets/team-artem.webp";
 import teamAnastasia from "@/assets/team-anastasia.webp";
 import teamAlesyaT from "@/assets/team-alesya-t.webp";
@@ -10,7 +14,15 @@ import teamInga from "@/assets/team-inga.webp";
 import teamSofia from "@/assets/team-sofia.webp";
 import teamAlesyaP from "@/assets/team-alesya-p.webp";
 import teamNikolay from "@/assets/team-nikolay.webp";
+<<<<<<< HEAD
+import teamKonstantinAsset from "@/assets/konstantin-new.png.asset.json";
+import teamGalinaAsset from "@/assets/team-galina.png.asset.json";
+import teamOlgaAsset from "@/assets/team-olga.png.asset.json";
+import teamEkaterinaAsset from "@/assets/team-ekaterina-v2.png.asset.json";
+import teamOlegAsset from "@/assets/team-oleg-v3.png.asset.json";
+=======
 import teamKonstantin from "@/assets/team-konstantin.webp";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 
 type Member = {
   role: string;
@@ -32,7 +44,11 @@ const team: Member[] = [
     name: "Константин Джапаридзе",
     description:
       "Сопровождает клиента до старта проекта: отвечает на вопросы, помогает выбрать пакет и условия. Руководит отделом продаж и следит, чтобы каждый клиент чувствовал внимание с первой минуты.",
+<<<<<<< HEAD
+    photo: teamKonstantinAsset.url,
+=======
     photo: teamKonstantin,
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   },
   {
     role: "Шеф-дизайнер",
@@ -63,6 +79,37 @@ const team: Member[] = [
     photo: teamSofia,
   },
   {
+<<<<<<< HEAD
+    role: "Дизайнер",
+    name: "Галина Абрамова",
+    description:
+      "Разрабатывает интерьерные концепции и рабочие чертежи. Внимательна к деталям и подбору материалов под бюджет клиента.",
+    photo: teamGalinaAsset.url,
+  },
+  {
+    role: "Дизайнер",
+    name: "Ольга Шарова",
+    description:
+      "Создаёт планировки и визуальные образы интерьера, помогает клиенту определиться со стилем и наполнением проекта.",
+    photo: teamOlgaAsset.url,
+  },
+  {
+    role: "3D-визуализатор",
+    name: "Екатерина Гарбузова",
+    description:
+      "Создаёт фотореалистичные визуализации интерьера, чтобы вы могли увидеть будущий ремонт до его старта.",
+    photo: teamEkaterinaAsset.url,
+  },
+  {
+    role: "3D-визуализатор",
+    name: "Олег Кайгородов",
+    description:
+      "Работает с 3D-сценами, светом и материалами — отвечает за то, чтобы визуализации точно передавали атмосферу проекта.",
+    photo: teamOlegAsset.url,
+  },
+  {
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     role: "Комплектация",
     name: "Алеся Протасюк",
     description:
@@ -71,7 +118,11 @@ const team: Member[] = [
   },
   {
     role: "Технадзор",
+<<<<<<< HEAD
+    name: "Николай Литвинов",
+=======
     name: "Николай",
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     description:
       "Контролирует ремонт на объекте, координирует бригады и проверяет качество работ на каждом этапе — от чернового до финиша.",
     photo: teamNikolay,
@@ -85,6 +136,14 @@ const Team = () => {
 
   return (
     <div className="min-h-screen bg-background">
+<<<<<<< HEAD
+      <SEO
+        title="Команда студии «Твой Интерьер» — дизайнеры, менеджеры, технадзор"
+        description="Знакомьтесь с командой авторской студии «Твой Интерьер»: дизайнеры, проектные менеджеры, технадзор и комплектатор."
+        path="/team"
+      />
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       <Header />
 
       <main className="pt-32 pb-24 lg:pt-40 lg:pb-32">
@@ -122,7 +181,11 @@ const Team = () => {
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">
+<<<<<<< HEAD
+                        <span className="text-foreground/75 font-body text-xs uppercase tracking-wider">
+=======
                         <span className="text-foreground/30 font-body text-xs uppercase tracking-wider">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                           Фото
                         </span>
                       </div>

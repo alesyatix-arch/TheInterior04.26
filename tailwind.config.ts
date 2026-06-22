@@ -14,8 +14,13 @@ export default {
     },
     extend: {
       fontFamily: {
+<<<<<<< HEAD
+        heading: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        body: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+=======
         heading: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         body: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       },
       colors: {
         border: "hsl(var(--border))",

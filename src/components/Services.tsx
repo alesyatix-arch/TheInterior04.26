@@ -1,14 +1,38 @@
 import { Check, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
+import imgFull from "@/assets/package-full.webp";
+import imgPlanningAsset from "@/assets/package-planning-floorplan.png.asset.json";
+import imgConceptAsset from "@/assets/package-concept-user.png.asset.json";
+
+const imgPlanning = imgPlanningAsset.url;
+const imgConcept = imgConceptAsset.url;
+
+const packages: Array<{
+  number: string;
+  name: string;
+  image: string;
+  price: string;
+  timeline: string;
+  features: string[];
+  recommended?: boolean;
+  fit?: "contain" | "cover";
+}> = [
+=======
 import imgPlanning from "@/assets/package-planning.webp";
 import imgConcept from "@/assets/package-concept.webp";
 import imgFull from "@/assets/package-full.webp";
 
 const packages = [
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   {
     number: "01",
     name: "Планировка",
     image: imgPlanning,
+<<<<<<< HEAD
+    fit: "contain",
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
     price: "900",
     timeline: "от 7 рабочих дней",
     features: [
@@ -18,12 +42,22 @@ const packages = [
   },
   {
     number: "02",
+<<<<<<< HEAD
+    name: "Эскизный проект",
+    image: imgConcept,
+    fit: "cover",
+    price: "1 900",
+    timeline: "от 12 рабочих дней",
+    features: [
+      "Всё из формата «Планировка»",
+=======
     name: "Дизайн-концепция",
     image: imgConcept,
     price: "1 900",
     timeline: "от 12 рабочих дней",
     features: [
       "Всё из пакета «План»",
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       "Адаптация выбранного стиля для вашего объекта (3D-визуализация)",
       "Ведомость материалов и закупок",
     ],
@@ -36,7 +70,11 @@ const packages = [
     price: "2 900",
     timeline: "от 19 рабочих дней",
     features: [
+<<<<<<< HEAD
+      "Всё из формата «Эскизный проект»",
+=======
       "Всё из пакета «Дизайн-концепция»",
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       "Строительные планы, включая развёртки",
     ],
   },
@@ -49,10 +87,17 @@ const Services = () => {
         {/* Header */}
         <div className="max-w-3xl mx-auto mb-20 text-center">
           <span className="inline-block text-sm font-body font-medium uppercase tracking-[0.2em] text-primary mb-6">
+<<<<<<< HEAD
+            Форматы проекта
+          </span>
+          <h2 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-semibold text-foreground">
+            Выберите формат проекта под вашу задачу
+=======
             Пакет услуг
           </span>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-heading font-semibold text-foreground">
             Пакет услуг
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
           </h2>
         </div>
 
@@ -78,13 +123,22 @@ const Services = () => {
                 )}
 
                 {/* Top image */}
+<<<<<<< HEAD
+                <div className={`aspect-[4/3] overflow-hidden flex items-center justify-center ${isDark ? "bg-background" : "bg-muted"}`}>
+=======
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                   <img
                     src={pkg.image}
                     alt={pkg.name}
                     loading="lazy"
+<<<<<<< HEAD
+                    decoding="async"
+                    className={`w-full h-full ${pkg.fit === "contain" ? "object-contain" : "object-cover"}`}
+=======
                   decoding="async"
                     className="w-full h-full object-cover"
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                   />
                 </div>
 
@@ -93,10 +147,17 @@ const Services = () => {
                 <div className="mb-8">
                   <span
                     className={`text-xs font-body tracking-[0.2em] uppercase mb-3 block ${
+<<<<<<< HEAD
+                      isDark ? "text-background/60" : "text-muted-foreground"
+                    }`}
+                  >
+                    Формат {pkg.number}
+=======
                       isDark ? "text-background/30" : "text-muted-foreground/50"
                     }`}
                   >
                     Пакет {pkg.number}
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                   </span>
                   <h3
                     className={`text-3xl lg:text-4xl font-heading font-semibold ${
@@ -118,7 +179,11 @@ const Services = () => {
                   </span>
                   <span
                     className={`text-lg font-body ${
+<<<<<<< HEAD
+                      isDark ? "text-background/75" : "text-muted-foreground"
+=======
                       isDark ? "text-background/50" : "text-muted-foreground"
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                     }`}
                   >
                     ₽/м²
@@ -135,7 +200,11 @@ const Services = () => {
                       />
                       <span
                         className={`text-base lg:text-lg font-body leading-relaxed ${
+<<<<<<< HEAD
+                          isDark ? "text-background/90" : "text-foreground/70"
+=======
                           isDark ? "text-background/80" : "text-foreground/70"
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                         }`}
                       >
                         {feature}
@@ -147,7 +216,11 @@ const Services = () => {
                 {/* Timeline */}
                 <div
                   className={`mb-8 text-base font-body ${
+<<<<<<< HEAD
+                    isDark ? "text-background/70" : "text-muted-foreground"
+=======
                     isDark ? "text-background/40" : "text-muted-foreground"
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                   }`}
                 >
                   <div className="flex items-center gap-2">

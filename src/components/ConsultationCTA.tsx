@@ -1,5 +1,10 @@
 import { useEffect, useRef } from "react";
+<<<<<<< HEAD
+import designerAsset from "@/assets/consultation-man-full.png.asset.json";
+const designerImg = designerAsset.url;
+=======
 import designerImg from "@/assets/consultation-man.webp";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 import { useInView } from "@/hooks/useInView";
 import { mountBitrixForm } from "@/lib/bitrixForm";
 

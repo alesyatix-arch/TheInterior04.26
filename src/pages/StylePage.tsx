@@ -6,6 +6,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Packages from "@/components/Packages";
 import ImageLightbox from "@/components/ImageLightbox";
+<<<<<<< HEAD
+import SEO from "@/components/SEO";
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
 import { Button } from "@/components/ui/button";
 
 const StylePage = forwardRef<HTMLDivElement>((_, ref) => {
@@ -60,6 +64,14 @@ const StylePage = forwardRef<HTMLDivElement>((_, ref) => {
 
   return (
     <div className="min-h-screen bg-background">
+<<<<<<< HEAD
+      <SEO
+        title={`${style.name} — стиль интерьера | Твой Интерьер`}
+        description={style.description}
+        path={`/style/${style.id}`}
+      />
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       <Header />
 
       {/* Hero Section - Split Layout */}
@@ -145,7 +157,11 @@ const StylePage = forwardRef<HTMLDivElement>((_, ref) => {
                 <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
                   <div className="flex items-center gap-3">
                     <span className="w-8 h-px bg-primary" />
+<<<<<<< HEAD
+                    <span className="text-sm font-body font-medium uppercase tracking-wider text-background">{style.galleryLabelLiving || "Кухня-гостиная"}</span>
+=======
                     <span className="text-sm font-body font-medium uppercase tracking-wider text-background">Кухня-гостиная</span>
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                   </div>
                 </div>
               )}
@@ -157,7 +173,11 @@ const StylePage = forwardRef<HTMLDivElement>((_, ref) => {
               onClick={() => openLightbox(1)}
               className="lg:col-span-5 relative overflow-hidden group cursor-pointer"
             >
+<<<<<<< HEAD
+              <div className="aspect-[4/3] lg:aspect-auto lg:h-full">
+=======
               <div className="aspect-[4/3]">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                 <img
                   src={style.galleryImages.bedroom}
                    alt={`${style.name} - Спальня`}
@@ -181,7 +201,11 @@ const StylePage = forwardRef<HTMLDivElement>((_, ref) => {
               onClick={() => openLightbox(2)}
               className="lg:col-span-5 relative overflow-hidden group cursor-pointer"
             >
+<<<<<<< HEAD
+              <div className="aspect-[4/3] lg:aspect-auto lg:h-full">
+=======
               <div className="aspect-[4/3]">
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
                 <img
                   src={style.galleryImages.bathroom}
                    alt={`${style.name} - Санузел`}

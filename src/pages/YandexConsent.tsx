@@ -2,13 +2,29 @@ import { forwardRef } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BackButton from "@/components/BackButton";
+<<<<<<< HEAD
+import SEO from "@/components/SEO";
 
 const YandexConsent = forwardRef<HTMLDivElement>((_, ref) => {
   const siteUrl = "the-interior.ru";
+  const siteName = "Твой Интерьер";
+=======
+
+const YandexConsent = forwardRef<HTMLDivElement>((_, ref) => {
+  const siteUrl = "the-interior.ru";
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
   const email = "info@coolagin.design";
 
   return (
     <div ref={ref} className="min-h-screen bg-background">
+<<<<<<< HEAD
+      <SEO
+        title="Согласие на обработку персональных данных | Твой Интерьер"
+        description="Согласие пользователя на обработку персональных данных при использовании сайта студии «Твой Интерьер»."
+        path="/yandex-consent"
+      />
+=======
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
       <Header />
       <main className="container mx-auto px-4 lg:px-12 xl:px-16 py-32 max-w-4xl">
         <BackButton />
@@ -18,7 +34,11 @@ const YandexConsent = forwardRef<HTMLDivElement>((_, ref) => {
 
         <div className="space-y-4 text-base font-body text-foreground/90 leading-relaxed">
           <p>
+<<<<<<< HEAD
+            Настоящим субъект персональных данных — пользователь сайта <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteName}</a>, в соответствии со ст. 9 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» дает свое конкретное, предметное, информированное, сознательное и однозначное согласие на обработку своих персональных данных ИП Кулагину Артему Сергеевичу ИНН 772155337685, ОГРНИП 316774600431457 (далее — оператор), для следующих целей:
+=======
             Настоящим субъект персональных данных — пользователь сайта <a href={`https://${siteUrl}`} className="text-primary hover:underline">{siteUrl}</a>, в соответствии со ст. 9 Федерального закона от 27.07.2006 N 152-ФЗ «О персональных данных» дает свое конкретное, предметное, информированное, сознательное и однозначное согласие на обработку своих персональных данных ИП Кулагину Артему Сергеевичу ИНН 772155337685, ОГРНИП 316774600431457 (далее — оператор), для следующих целей:
+>>>>>>> 2470cdd4f31f8e8c76332f301c8d7a8d6bc8c4f5
           </p>
 
           <ul className="list-disc pl-6 space-y-1">
