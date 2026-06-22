@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { forwardRef, lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 
 import Index from "./pages/Index";
 
@@ -17,12 +17,12 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const queryClient = new QueryClient();
 
 const PageFallback = () => (
-  <div className="min-h-screen flex items-center justify-center bg-background">
-    <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+  <div className="min-h-screen flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-black border-t-transparent rounded-full animate-spin" />
   </div>
 );
 
-const App = forwardRef(() => {
+export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
@@ -45,8 +45,4 @@ const App = forwardRef(() => {
       </TooltipProvider>
     </QueryClientProvider>
   );
-});
-
-App.displayName = "App";
-
-export default App;
+}
